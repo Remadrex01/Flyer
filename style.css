@@ -1,0 +1,82 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ece359, #62ebd4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flyer Container */
+.flyer-container {
+  padding: 20px;
+}
+
+/* Flyer Card */
+.flyer-card {
+  background: rgba(216, 180, 79, 0.842);
+  border-radius: 20px;
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+  backdrop: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Headline */
+.flyer-card h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Date */
+.flyer-card .date {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Description */
+.flyer-card .description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #fff;
+  color: #6e8efb;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+.cta-button:hover {
+  background: #eaeaea;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .flyer-card {
+    padding: 30px 20px;
+  }
+
+  .flyer-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .flyer-card .description {
+    font-size: 0.9rem;
+  }
+}
